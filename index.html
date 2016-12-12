@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        li {
+            list-style:none;
+        }
+
+        .pagination {
+            overflow:hidden;
+        }
+
+        .pagination .page {
+            float:left;
+            padding:5px 10px;
+            border:1px solid #000;
+            margin-right:10px;
+        } 
+
+        .pagination .page.disabled:hover,
+        .pagination .page.disabled {
+            background-color:#999; 
+            color:#fff;
+            cursor:default;
+        }
+
+        .pagination .page:hover,   
+        .pagination .page.current-page {
+            background-color:#ea544a;
+            color:#fff;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Pagination</h2>
+    <ul class="movie-list">
+
+    </ul>
+    <ul class="pagination">
+
+    </ul>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
